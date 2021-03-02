@@ -27,7 +27,7 @@ fieldset{
 }
 
 
-/* *********** MOBILE *************/
+/* *********** NAVBAR *************/
 
 .navbar a {
     display: block;
@@ -72,8 +72,8 @@ fieldset{
 
 .suscrib-link {
     position: relative;
-    margin-right: 50px;
     bottom: 56px;
+    margin-right: 5%;
     color: #0065fc;
 }
 
@@ -89,7 +89,17 @@ fieldset{
     font-weight: 500;
     font-size: 1rem;
 }
-/* *********** RECHERCHE BAR ************ */
+
+.activity-link:hover {
+    border-bottom: solid 3px #0065fc;
+    color: #0065fc;
+}
+
+.suscrib-link:hover {
+    color:#0065fc;
+    font-weight: bolder;
+}
+/* *********** SEARCH BAR ************ */
 
 .btn-recherche {
     margin-left: 5%;
@@ -122,9 +132,8 @@ fieldset{
     border: solid 1px #f2f2f2;
 }
 
-.btn-recherche_submit {
-    background-color: #0065fc;
-    
+.btn-recherche_input_submit {
+    visibility: hidden;
 }
 
 .btn-recherche_loupe {
@@ -135,14 +144,14 @@ fieldset{
     display: flex;
     align-items: center;
     position: absolute;
-    left: 300px;
+    left: 293px;
 }
 
 .btn-recherche_loupe i {
     margin: auto;
     color: #f2f2f2;
 }
-
+   
 /* ******** FILTER SECTION ************* */
 
 .filter-container {
@@ -172,7 +181,7 @@ fieldset{
 
 .filter-input:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 40px --10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
     background-color: #0065fc;
     color: #deebff;
 }
@@ -186,7 +195,6 @@ fieldset{
     position: absolute;
     left: -7px;
     top: -2px;
-
     z-index: 1;
 }
 
@@ -207,7 +215,7 @@ fieldset{
     font-weight: bold;
 }
 
-.eco input {
+.economique input {
     width: 155px;
 }
 
@@ -281,9 +289,7 @@ aside {
 }
 
 .aside_title h2 {
-    color: black;
-    font-size: 1.3rem;
-    margin-right: 20px;
+   margin-top: 30px;
 }
 
 .aside_title i {
@@ -349,8 +355,16 @@ aside {
     padding: 5px;
     border-radius: 17px 17px 0px 0px;
 }
+.card-aside:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba( 0, 0, 0, 0.25);
+}
 
 .cards-aside:hover {
+    display: flex;
+}
+
+.note-aside {
     display: flex;
 }
 
@@ -364,7 +378,7 @@ aside {
 
 /* cards hebergement */
 
-.hebergement.cards {
+.hebergement_cards {
     background-color: white;
     max-width: 335px;
     height: auto;
@@ -388,6 +402,58 @@ aside {
     border-radius: 17px 17px 0px 0px;
 }
 
+.hebergement_cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+.moore {
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+.moore:hover {
+     color: #0065fc;
+ }
+
+/* ****************** ACTIVITY ****************** */
+
+#activity {
+    margin-top: 60px;
+}
+
+.activite_title {
+    margin-left: 6%;
+    margin-bottom: 30px;
+}
+
+.activite_cards {
+    background-color: white;
+    max-width: 335px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 17px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 15px darkgrey;
+    transition: 0.3s;
+}
+
+.activite_cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba( 0, 0, 0, 0.25);
+}
+
+.activity-thumb {
+    object-fit: cover;
+    height: 136px;
+    width: 100%;
+    border-radius: 17px 17px 0px 0px;
+}
+
+.footer_body {
+    margin-left: 5%;
+}
 
 footer {
     width: 100%;
@@ -405,4 +471,183 @@ footer {
 }
 
 
+/* ************************ DEKSTOP ************************** */
 
+@media only screen and (min-width: 900px) {
+    .site-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3.5% 60% 40px 30% 3.5%;
+        grid-template-areas: 
+        " header header header header header "
+        " search search search search search "
+        "  filter filter filter filter filter "
+        " . main . aside . "
+        ". activity activity activity ."
+        " footer footer footer footer footer"
+        ;
+} 
+
+header {
+    grid-area: header;
+}
+
+.search {
+    grid-area: search;
+    margin: 0;
+}
+
+.filter {
+    grid-area: filter;
+}
+
+.main {
+    background-color: #f2f2f2;
+    height: auto;
+    border-radius: 17px;
+    grid-area: main;
+    width: 95%;
+}
+
+aside {
+    height: auto;
+    border-radius: 17px;
+    grid-area: aside;
+    max-width: 340px;
+    margin-left: 40px;
+    margin-right: 5%;
+}
+
+#activity {
+    grid-area: activity;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+}
+/* ************** NAVBAR ************** */
+
+.navbar-container {
+    flex-wrap: nowrap;
+    position: relative;
+    top: -109px;
+}
+
+/* ****************** FILTER ****************** */
+
+.filter-container {
+    display: flex;
+}
+/* ******************* ACTIVITY ******************** */
+
+.cards-activity-content {
+    display: grid;
+    grid-template-columns: 3.5% 20% 1fr 20% 1fr 20% 1fr 20% 3.5%;
+    grid-template-rows: 2fr;
+}
+
+.suscrib-link {
+    position: initial;
+    margin-left: 75px;
+    padding-top: 40px;
+}
+
+.activity-link:hover {
+    border-bottom: none;
+    border-top: solid 3px #0065fc;
+    color: #0065fc;
+}
+ 
+.suscrib-link:hover {
+    color: #0065fc;
+}
+
+.titre_container {
+    margin-top: -70px;
+}
+/* ******************** SEARCH BAR *********************** */
+
+.btn-recherche_input_submit {
+    visibility: visible;
+    position: absolute;
+    height: 50px;
+    border: none;
+    border-radius: 10px 16px 10px 0px;
+    background-color: #0065fc;
+    color: #f2f2f2;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.btn-recherche_loupe {
+    visibility: hidden;
+}
+
+.hebergement-cards-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.hebergement_cards {
+    max-width: 245px;
+}
+.moore {
+    padding-bottom: 20px;
+}
+
+/* +++++++++++++++ FILTER **************** */
+
+.filter-container {
+    display: flex;
+}
+
+.port {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 2;
+}
+
+.port img {
+    height: 305px;
+}
+
+.fort {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.frioul {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.calanques {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.calanques img {
+    height: 305px;
+}
+
+.dame {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.parc {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}

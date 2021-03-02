@@ -4,67 +4,68 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
+    <meta name="description" 
          content="Besoins de vacances ? En centre ville ou en pleine nature sur Resevia ">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="#">
-    <link rel="preconnect" href="http://fonts.gstatic.com">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" 
-    rel="stylesheet">
-    <script src="https://use.fontawesome.com/796669215a.js"> crossorigin="anonymous"</script>
-    <link rel="shortcut icon" href="images/logo/Reservia.svg" type="image/x-icon">
-    <title>Reservia</title>             
-  </head>
+         <link rel="stylesheet" href="css/style.css">
+         <link rel="stylesheet" href="css/normalize.css">
+         <link rel="preconnect" href="http://fonts.gstatic.com">
+         <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" 
+         rel="stylesheet">
+         <script src="https://use.fontawesome.com/796669215a.js"> crossorigin="anonymous"</script>
+         <link rel="shortcut icon" href="images/logo/Reservia.svg" type="image/x-icon">
+         <title>Reservia</title>             
+       </head>
+     
+        <body> 
+          <div class="site-content"></div>
 
-   <body>
-     <div class="site-content">
-
-                           <!------ HEADER ------->
-     <header>
+                           <!------ HEADER ------>
+   <header>
             
-            <a href="#"><img class="logo" src="images/logo/Reservia.svg" alt="le logo de Reservia"></a>
-        
-          <navbar class="navbar-container">
-            <a class="hebergement-link" href="#hebergement">Hébergements</a></li> 
-            <a class="activity-link" href="#activity">Activités</a></li>
-            <a class="suscrib-link" href="#suscrib">S'inscrire</a></li> 
-            
-       </navbar>
-      </nav>
-    
-         <hgroup class="titre_container">
-           <h1 class="titre_principale"><strong>Votre Hébergement pour des vacances de rêve</strong></h1>
-           <h2 class="titre_secondaire">En plein centre ville ou en pleine nature</h2>
-         </hgroup>
-
-      </header>
-    
-                            <!--- SEARCH SECTION --->
-        <section class="search">
-
-           <div class="btn-recherche">
-               <span class="pin-icone"><i class="fas fa-map-marker-alt"></i></span>
-                <form method="POST" action="#" class="recherche">
-                  <input class="btn-recherche_input" type="search" name="recherche" value="Marseille, France" autofocus>
-           <input type="submit" class="btn-recherche_submit" value="Rechercher">
-         </form>
-        <span class="btn-recherche_loupe"><i><i class="fas fa-search"></i></i></span>
+     <a href="#"><img class="logo" src="images/logo/Reservia.svg" alt="le logo de Reservia"></a>
+                        
+      <navbar class="navbar-container">
+        <a class="hebergement-link" href="#hebergement">Hébergements</a></li> 
+        <a class="activity-link" href="#activity">Activités</a></li>
+        <a class="suscrib-link" href="#suscrib">S'inscrire</a></li> 
+                            
+        </navbar>
+        </nav>
+                    
+        <hgroup class="titre_container">
+         <h1 class="titre_principale"><strong>Votre Hébergement pour des vacances de rêve</strong></h1>
+         <h2 class="titre_secondaire">En plein centre ville ou en pleine nature</h2>
+        </hgroup>
+                
+     </header>
+                    
+                              <!--- SEARCH SECTION --->
+    <section class="search">
+                
+    <div class="btn-recherche">
+     <span class="pin-icone"><i class="fa fa-map-pin"></i></span>
+     <form method="POST" action="#" class="recherche">
+     <input class="btn-recherche_input" type="search" name="recherche" value="Marseille, France" autofocus>
+     <input type="submit" class="btn-recherche_submit" value="Rechercher">
+    </form>
+       <span class="btn-recherche_loupe"><i><i class="fa fa-search"></i></i></span>
      </div>  
-
+                
    </section>
                            <!---- FILTER SECTION ---->
        
    <section class="filter">
          
-         <h3 class="filter-titre">Filtres</h3>
+         <h2 class="filter-titre">Filtres</h2>
          <fieldset class="filter-container">
             
                            <!---- Filtre economique --->
            
          <div class="filter-item">
-           <span class="filter-icone"><i class="fas fa-money-bill-wave"></i></span>
-           <form class="filter-item-formulaire eco" method="POST" action="#">
+           <span class="filter-icone"><i class="fa fa-money-bill-wave-alt"></i>
+           </span>
+           <form class="filter-item-formulaire economique" method="POST" action="#">
             <input class="filter-input" type="text" name="economique" value="économique"
                 disabled="disabled">
            </form>
@@ -72,7 +73,7 @@
                              <!--- Filtre familial --->      
         
            <div class="filter-item">
-            <span class="filter-icone"><i class="fas fa-child"></i></span>
+            <span class="filter-icone"><i class="fa fa-child"></i></span>
               <form class="filter-item-formulaire famille" method="POST" action="#">
                <input class="filter-input" type="text" name="familiale" value="Familial"
                     disabled="disabled">               
@@ -82,7 +83,7 @@
                             <!--- Filtre romantique --->
 
          <div class="filter-item">
-           <span class="filter-icone"><i class="fas fa-heart"></i></span>
+           <span class="filter-icone"><i class="fa fa-heart"></i></span>
            <form class="filter-item-formulaire romantique" method="POST" action="#">
               <input class="filter-input" type="text" name="romantique" value="Romantique"
                     disabled="disabled">               
@@ -91,7 +92,7 @@
            
                             <!--- Filtre animaux --->
           <div class="filter-item">
-           <span class="filter-icone"><i class="fas fa-dog"></i></span>
+           <span class="filter-icone"><i class="fa fa-paw"></i></span>
             <form class="filter-item-formulaire animaux" method="POST" action="#">
                <input class="filter-input" type="text" name="animaux" value="Animaux autorisés"
                   disabled="disabled">               
@@ -101,7 +102,7 @@
          </fieldset>
                              <!--- Information ---->
             <div class="info-container">
-              <span class="icone-info"><i class="fas fa-info"></i></span>
+              <span class="icone-info"><i class="fa fa-info"></i></span>
               <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
@@ -111,7 +112,7 @@
       <aside>
             <div class="aside_title">
                <h2>Les plus populaires</h2>
-               <span><i class="fas fa-chart-line"></i></span>
+               <span><i class="fa fa-chart-line"></i></span>
             </div>
             <div class="cards-aside-content">
       <article class="cards-aside">
