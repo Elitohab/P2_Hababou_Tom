@@ -23,7 +23,7 @@
                            <!------ HEADER ------>
    <header>
             
-     <a href="#"><img class="logo" src="images/logo/Reservia.svg" alt="le logo de Reservia"></a>
+     <a href="css/normalize.css"><img class="logo" src="images/logo/Reservia.svg" alt="le logo de Reservia"></a>
                         
       <navbar class="navbar-container">
         <a class="hebergement-link" href="#hebergement">Hébergements</a></li> 
@@ -34,7 +34,7 @@
         </nav>
                     
         <hgroup class="titre_container">
-         <h1 class="titre_principale"><strong>Votre Hébergement pour des vacances de rêve</strong></h1>
+         <h1 class="titre_principal"><strong>Trouver votre Hébergement pour des vacances de rêve</strong></h1>
          <h2 class="titre_secondaire">En plein centre ville ou en pleine nature</h2>
         </hgroup>
                 
@@ -43,12 +43,12 @@
                               <!--- SEARCH SECTION --->
     <section class="search">
                 
-    <div class="btn-recherche">
-     <span class="pin-icone"><i class="fa fa-map-pin"></i></span>
-     <form method="POST" action="#" class="recherche">
-     <input class="btn-recherche_input" type="search" name="recherche" value="Marseille, France" autofocus>
-     <input type="submit" class="btn-recherche_submit" value="Rechercher">
-    </form>
+       <div class="btn-recherche">
+           <span class="pin-icone"><i class="fa fa-map-pin"></i></span>
+           <form method="POST" action="#" class="recherche">
+              <input class="btn-recherche_input" type="search" name="recherche" value="Marseille, France" autofocus>
+              <input type="submit" class="btn-recherche_input_submit" value="Rechercher">
+      </form>
        <span class="btn-recherche_loupe"><i><i class="fa fa-search"></i></i></span>
      </div>  
                 
@@ -57,13 +57,13 @@
        
    <section class="filter">
          
-         <h2 class="filter-titre">Filtres</h2>
+         <h3 class="filter-titre">Filtres</h2>
          <fieldset class="filter-container">
             
                            <!---- Filtre economique --->
            
          <div class="filter-item">
-           <span class="filter-icone"><i class="fa fa-money-bill-wave-alt"></i>
+           <span class="filter-icone"><i class="fa fa-money-bill-wave"></i>
            </span>
            <form class="filter-item-formulaire economique" method="POST" action="#">
             <input class="filter-input" type="text" name="economique" value="économique"
@@ -114,71 +114,65 @@
                <h2>Les plus populaires</h2>
                <span><i class="fa fa-chart-line"></i></span>
             </div>
-            <div class="cards-aside-content">
-      <article class="cards-aside">
-                <div id="liseret"></div>
-               <a href="#"></a><img class="aside-thumb">
-               <a href="images/hebergements/3_medium/hotellesoleildumatin_medium.jpg">><img
+           <div class="cards-aside-content">
+            <article class="cards-aside">
+               <a href="#"></a><img class="aside-thumb"
                 src="images/hebergements/4_small/hotellesoleildumatin_mini.jpg"
-              alt="Photo de l'hotel le soleil du matin"></a>
+                alt="Photo de l'hotel le soleil du matin"></a>
 
            <div class="cards-aside-body">
-             <h2 class="title-cards-aside">Hôtel Le soleil du matin</h2>
+              <h2 class="title-cards-aside">Hôtel Le soleil du matin</h2>
               <h3 class="prix-aside">Nuit à partir de 128<strong>€</strong></h3>
               <ul class="note-aside">
                 <li>
-                  <span class="blue-star"><i class="fas fa-star"></i></span>
+                     <span class="blue-star"><i class="fa fa-star"></i></span>
                 </li>
                 <li>
-                  <span class="blue-star"><i class="fas fa-star"></i></span>
+                     <span class="blue-star"><i class="fa fa-star"></i></span>
                 </li>
                 <li>
-                  <span class="blue-star"><i class="fas fa-star"></i></span>
+                    <span class="blue-star"><i class="fa fa-star"></i></span>
                 </li>
                 <li>
-                  <span class="blue-star"><i class="fas fa-star"></i></span>
+                    <span class="blue-star"><i class="fa fa-star"></i></span>
                 </li>
                 <li>
-                  <span class="blue-star"><i class="fas fa-star"></i></span>
+                    <span class="blue-star"><i class="fa fa-star"></i></span>
                 </li>
             </ul>
          </div>
      </article>
 
      <article class="cards-aside">
-         <div id="liseret"></div>
-            <a href="#"></a><img class="aside-thumb">
-            <a href="images/hebergements/3_medium/aucoeurdeleau_medium.jpg"><img
+        <a href="#"></a><img class="aside-thumb"
            src="images/hebergements/4_small/aucoeurdeleau_mini.jpg"
            alt="Photo de la chambre d'hôtes au coeur de l'eau"></a>
 
         <div class="cards-aside-body">
-          <h2 class="title-cards-aside">Au coeur de l'eau chambre d'hôtes</h2>
+           <h2 class="title-cards-aside">Au coeur de l'eau chambre d'hôtes</h2>
            <h3 class="prix-aside">Nuit à partir de 71<strong>€</strong></h3>
            <ul class="note-aside">
              <li>
-               <span class="blue-star"><i class="fas fa-star"></i></span>
+                  <span class="blue-star"><i class="fa fa-star"></i></span>
              </li>
              <li>
-               <span class="blue-star"><i class="fas fa-star"></i></span>
+                  <span class="blue-star"><i class="fa fa-star"></i></span>
              </li>
              <li>
-               <span class="blue-star"><i class="fas fa-star"></i></span>
+                  <span class="blue-star"><i class="fa fa-star"></i></span>
              </li>
              <li>
-               <span class="blue-star"><i class="fas fa-star"></i></span>
+                  <span class="blue-star"><i class="fa fa-star"></i></span>
              </li>
              <li>
-              <i class="fas fa-star grey"></i>
+                  <i class="fa fa-star grey"></i>
              </li> 
            </ul>
         </div>
     </article>
 
     <article class="cards-aside">
-           <div id="liseret"></div>
-           <a href="#"></a><img class="aside-thumb">
-           <a href="images/hebergements/3_medium/hoteltoutbleuetblanc_medium.jpg"><img
+        <a href="#"></a><img class="aside-thumb"
            src="images/hebergements/4_small/hoteltoutbleuetblanc_mini.jpg"
            alt="Photo de l'Hôtel tout bleu tout blanc"></a>
 
@@ -187,19 +181,19 @@
           <h3 class="prix-aside">Nuit à partir de 68<strong>€</strong></h3>
           <ul class="note-aside">
            <li>
-              <span class="blue-star"><i class="fas fa-star"></i></span>
+                 <span class="blue-star"><i class="fa fa-star"></i></span>
              </li>
               <li>
-               <span class="blue-star"><i class="fas fa-star"></i></span>
+                  <span class="blue-star"><i class="fa fa-star"></i></span>
               </li>
                <li>
-                <span class="blue-star"><i class="fas fa-star"></i></span>
+                  <span class="blue-star"><i class="fa fa-star"></i></span>
               </li>
                <li>
-                <span class="blue-star"><i class="fas fa-star"></i></span>
+                  <span class="blue-star"><i class="fa fa-star"></i></span>
               </li>
               <li>
-                    <i class="fas fa-star grey"></i>
+                    <i class="fa fa-star grey"></i>
                </li>
              </ul>
          </div>
@@ -213,34 +207,34 @@
       <main id="hebergement">
          <h2 class="hebergement_title">Hébergements à Marseille</h2>
          <div class="hebergement-cards-content">
-             <article class="hebergement_cards cannebiere">
+             <article class="hebergement_cards">
                <a href="#"><img class="hebergement-thumb"
                       src="images/hebergements/4_small/auberge_mini.jpg " alt="Photo de l'auberge"></a>
                 <div class="hebergement_body">
                       
              <h2 class="hebergement_body_title">Auberge de la Cannebière</h2>
              <h3 class="hebergement_body_price">Nuit à partir de 25<strong>€</strong></h3>
-               <ul class="hebergement_body_note">
+             <ul class="hebergement_body_note">
                   <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                      <span class="blue-star"><i class="fa fa-star"></i></span>
                    </li>
                    <li>
-                    <span class="blue-star"><i class="fas fa-star"></i></span>
+                       <span class="blue-star"><i class="fa fa-star"></i></span>
                    </li>
                     <li>
-                    <span class="blue-star"><i class="fas fa-star"></i></span>
+                       <span class="blue-star"><i class="fa fa-star"></i></span>
                    </li>
                     <li>
-                    <span class="blue-star"><i class="fas fa-star"></i></span>
+                       <span class="blue-star"><i class="fa fa-star"></i></span>
                    </li>
                    <li>
-                      <i class="fas fa-star grey"></i>
+                      <i class="fa fa-star grey"></i>
                    </li>
                 </ul>
              </div> 
-       </article>
+          </article>
 
-             <article class="hebergement_cards hotel-port">
+           <article class="hebergement_cards">
               <a href="#"> <img class="hebergement-thumb"
                      src="images/hebergements/4_small/hotelduport_mini.jpg" alt="Photo du port"></a>
                <div class="hebergement_body">
@@ -249,52 +243,52 @@
             <h3 class="hebergement_body_price">Nuit à partir de 52<strong>€</strong></h3>
             <ul class="hebergement_body_note">
                  <li>
-                  <span class="blue-star"><i class="fas fa-star"></i></span>
+                      <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                      <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                    <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                      <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                    <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                      <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                    <span class="blue-star"><i class="fas fa-star"></i></span>
+                      <span class="blue-star"><i class="fa fa-star"></i></span>
                    </li>
                </ul>
             </div>  
        </article>
 
-            <article class="hebergement_cards hotellesmouettes">
+            <article class="hebergement_cards">
               <a href="#"> <img class="hebergement-thumb"
                      src="images/hebergements/4_small/hotellesmouettes_mini.jpg" alt="Photo Les mouettes"></a>
                <div class="hebergement_body">
                      
             <h2 class="hebergement_body_title">Hôtel Les mouettes</h2>
             <h3 class="hebergement_body_price">Nuit à partir de 76<strong>€</strong></h3>
-              <ul class="hebergement_body_note">
+            <ul class="hebergement_body_note">
                  <li>
-                  <span class="blue-star"><i class="fas fa-star"></i></span>
+                  <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                   <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                    <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                   <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                    <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                   <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                     <i class="fas fa-star grey"></i>
+                     <i class="fa fa-star grey"></i>
                   </li>
                </ul>
             </div>  
         </article>
 
-         <article class="hebergement_cards hoteldelamer">
+         <article class="hebergement_cards">
               <a href="#"> <img class="hebergement-thumb"
                      src="images/hebergements/4_small/hoteldelamer_mini.jpg" alt="Photo de la mer"></a>
                <div class="hebergement_body">
@@ -303,73 +297,73 @@
             <h3 class="hebergement_body_price">Nuit à partir de 46<strong>€</strong></h3>
             <ul class="hebergement_body_note">
                  <li>
-                       <span class="blue-star"><i class="fas fa-star"></i></span>
+                       <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                       <span class="blue-star"><i class="fas fa-star"></i></span>
+                       <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                    <li>
-                       <span class="blue-star"><i class="fas fa-star"></i></span>
+                       <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                       <i class="fas fa-star grey"></i>
+                       <i class="fa fa-star grey"></i>
                  </li>
                   <li>
-                       <i class="fas fa-star grey"></i>
+                       <i class="fa fa-star grey"></i>
                   </li>
                </ul>
             </div> 
         </article>
         
-        <article class="hebergement_cards aubergelepanier">
+        <article class="hebergement_cards">
               <a href="#"> <img class="hebergement-thumb"
                      src="images/hebergements/4_small/aubergelepanier_mini.jpg" alt="Photo Le Panier"></a>
                <div class="hebergement_body">
                      
             <h2 class="hebergement_body_title">Auberge Le Panier</h2>
             <h3 class="hebergement_body_price">Nuit à partir de 23<strong>€</strong></h3>
-              <ul class="hebergement_body_note">
+            <ul class="hebergement_body_note">
                  <li>
-                  <span class="blue-star"><i class="fas fa-star"></i></span>
+                  <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                   <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                    <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                   <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                    <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                   <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                     <i class="fas fa-star grey"></i>
+                     <i class="fa fa-star grey"></i>
                   </li>
                </ul>
             </div>  
         </article>
 
-        <article class="hebergement_cards chezamina">
+        <article class="hebergement_cards">
               <a href="#"> <img class="hebergement-thumb"
                      src="images/hebergements/4_small/hotelchezamina_mini.jpg" alt="Photo chez Amina"></a>
                <div class="hebergement_body">
                      
             <h2 class="hebergement_body_title">Hôtel chez Amina</h2>
             <h3 class="hebergement_body_price">Nuit à partir de 96<strong>€</strong></h3>
-              <ul class="hebergement_body_note">
+            <ul class="hebergement_body_note">
                  <li>
-                  <span class="blue-star"><i class="fas fa-star"></i></span>
+                  <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                   <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                   <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                    <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                   <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                    <li>
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                   <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                   <li> 
-                   <span class="blue-star"><i class="fas fa-star"></i></span>
+                   <span class="blue-star"><i class="fa fa-star"></i></span>
                   </li>
                </ul>
             </div> 
@@ -387,21 +381,21 @@
              <div class="cards-activity-content">
                
          <article class="activite_cards port">
-                 <a href="#"><img class="activity-thumb port" src="images/activites/4_small/vieuxport_mini.jpg"
-                     alt="photo du vieux port"></a>
+                 <a href="#"><img class="activity-thumb" src="images/activites/4_small/vieuxport_mini.jpg"
+                     alt="photos du vieux port"></a>
                  <h2 class="body-activity">Vieux Port</h2>
                
          </article>
 
          <article class="activite_cards fort">
-                <a href="#"><img class="activity-thumb fort" src="images/activites/4_small/fortdepomegues_mini.jpg"
-                    alt="photo du fort-de-pomegues"></a>
+                <a href="#"><img class="activity-thumb" src="images/activites/4_small/fortdepomegues_mini.jpg"
+                    alt="photos du fort-de-pomegues"></a>
                 <h2 class="body-activity">Fort de Pomègues</h2>
 
          </article>
 
          <article class="activite_cards frioul">
-                <a href="#"><img class="activity-thumb frioul" src="images/activites/4_small/ilesdufrioul_mini.jpg"
+                <a href="#"><img class="activity-thumb" src="images/activites/4_small/ilesdufrioul_mini.jpg"
                     alt="photo de l'île du frioul"></a>
                 <h2 class="body-activity">Îles du Frioul</h2>
 
@@ -409,25 +403,25 @@
 
          <article class="activite_cards calanques">
                 <a href="#"><img class="activity-thumb" src="images/activites/4_small/parcnationaldescalanques_mini.jpg"
-                    alt="photo du parc national des calanques"></a>
+                    alt="photos du parc national des calanques"></a>
                 <h2 class="body-activity">Parc National des calanques</h2>
 
          </article>
 
               <article class="activite_cards dame">
-                <a href="#"><img class="activity-thumb dame" src="images/activites/4_small/notredamedelagarde_mini.jpg"
-                    alt="photo de notre-dame-de-la-garde"></a>
+                <a href="#"><img class="activity-thumb" src="images/activites/4_small/notredamedelagarde_mini.jpg"
+                    alt="photos de notre-dame-de-la-garde"></a>
                     <h2 class="body-activity">Notre-Dame-de-la-Garde</h2>
 
          </article>
 
          <article class="activite_cards parc">
                 <a href="#"><img class="activity-thumb" src="images/activites/4_small/parclongchamps_mini.jpg"
-                    alt="photo du parc longchamp"></a>
+                    alt="photos du parc longchamp"></a>
                     <h2 class="body-activity">Parc Longchamp</h2>
 
-         </article>
-       </div>
+           </article>
+         </div>
 
      </section>
          
@@ -437,24 +431,29 @@
 
           <div class="footer_body">
 
-           <ul class="listapropos">
+           <ul class="lista">
                <li class="list-element"><strong>A propos</strong></li>
                <li class="list-element"><a href="#">Fonctionnement du site</a></li>
                <li class="list-element"><a href="#">Conditions générale de ventes</a></li>
                <li class="list-element"><a href="#">Données et confidentialité</a></li>
            </ul>
 
-           <ul class="listhebergemet">
+           <ul class="listb">
                 <li class="list-element"><strong>Nos Hébergements</strong></li>
                 <li class="list-element"><a href="#">Charte qualité</a></li>
                 <li class="list-element"><a href="#">Soumettre votre hôtel</a></li>
            </ul>
 
-            <ul class="listassistance">
+            <ul class="listc">
                   <li class="list-element"><strong>Assistance</strong></li>
                   <li class="list-element"><a href="#">Centre d'aide</a></li>
                   <li class="list-element"><a href="#">Nous contacter</a></li>
            </ul>
          </div>
 
-      </footer>
+          </footer>
+
+      </div>
+    </body>
+
+</html>
