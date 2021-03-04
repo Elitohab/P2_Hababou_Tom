@@ -27,9 +27,9 @@ fieldset{
 }
 
 
-/* *********** NAVBAR *************/
+/* *********** NAVBAR MOBILE *************/
 
-.navbar a {
+navbar a {
     display: block;
     font-size: 1.2;
     font-weight: 500;
@@ -56,7 +56,7 @@ fieldset{
     text-align: center;
     border-bottom: solid 3px #0065fc;
     color: #0065fc;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     position: relative;
     transition: 0.5s;
 }
@@ -83,7 +83,7 @@ fieldset{
 
 .titre_principale {
      font-size: 1.3rem;
-    margin-bottom: 10px;
+     margin-bottom: 10px;
 }
 .titre_secondaire {
     font-weight: 500;
@@ -109,11 +109,11 @@ fieldset{
     grid-area: btn;
 }
 
-.pin-icone{
+.pin-icone {
     background-color: #f2f2f2;
     height: 50px;
     width: 50px;
-    border-radius: 17% 0 0 17%;
+    border-radius: 17% 0% 0% 17%;
     display: flex;
     font-size: large;
 }
@@ -160,7 +160,7 @@ fieldset{
     flex-wrap: wrap;
 }
 
-.filter-titre {
+.filter-title {
     font-size: 1rem;
     position: absolute;
     margin-left: 5%;
@@ -265,7 +265,7 @@ fieldset{
 }
 
 /* taille et couleur des bases notes cards */
-.fas {
+.fa {
     font-size: 0.7rem;
     color: #f2f2f2;
 }
@@ -321,7 +321,7 @@ aside {
     margin: 15px 15px 5px 15px;
 }
 
-.hebergement-body {
+.hebergement_body {
     margin-left: 15px;
 }
 
@@ -451,24 +451,8 @@ aside {
     border-radius: 17px 17px 0px 0px;
 }
 
-.footer_body {
-    margin-left: 5%;
-}
 
-footer {
-    width: 100%;
-    background-color: #f2f2f2;
-    padding: 30px;
-}
 
-.list-element {
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-}
-.list-element a:hover {
-    color: #0065fc;
-}
 
 
 /* ************************ DEKSTOP ************************** */
@@ -526,47 +510,6 @@ footer {
     grid-area: footer;
     width: 100%;
 }
-/* ************** NAVBAR ************** */
-
-.navbar-container {
-    flex-wrap: nowrap;
-    position: relative;
-    top: -109px;
-}
-
-/* ****************** FILTER ****************** */
-
-.filter-container {
-    display: flex;
-}
-/* ******************* ACTIVITY ******************** */
-
-.cards-activity-content {
-    display: grid;
-    grid-template-columns: 3.5% 20% 1fr 20% 1fr 20% 1fr 20% 3.5%;
-    grid-template-rows: 2fr;
-}
-
-.suscrib-link {
-    position: initial;
-    margin-left: 75px;
-    padding-top: 40px;
-}
-
-.activity-link:hover {
-    border-bottom: none;
-    border-top: solid 3px #0065fc;
-    color: #0065fc;
-}
- 
-.suscrib-link:hover {
-    color: #0065fc;
-}
-
-.titre_container {
-    margin-top: -70px;
-}
-/* ******************** SEARCH BAR *********************** */
 
 .btn-recherche_input_submit {
     visibility: visible;
@@ -595,11 +538,17 @@ footer {
 .moore {
     padding-bottom: 20px;
 }
-
-/* +++++++++++++++ FILTER **************** */
+/* ****************** FILTER ****************** */
 
 .filter-container {
     display: flex;
+}
+/* ******************* ACTIVITY ******************** */
+
+.cards-activity-content {
+    display: grid;
+    grid-template-columns: 3.5% 20% 1fr 20% 1fr 20% 1fr 20% 3.5%;
+    grid-template-rows: 2fr;
 }
 
 .port {
@@ -650,4 +599,59 @@ footer {
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 3;
+}
+.activity-link:hover {
+    border-bottom: none;
+    border-top: solid 3px #0065fc;
+    color: #0065fc;
+}
+/* ************** NAVBAR ************** */
+
+.navbar-container {
+    flex-wrap: nowrap;
+    position: relative;
+    top: -109px;
+}
+
+.suscrib-link {
+    position: initial;
+    margin-left: 75px;
+    padding-top: 40px;
+}
+
+.suscrib-link:hover {
+    color: #0065fc;
+}
+
+.titre_container {
+    margin-top: -70px;
+}
+
+.footer_body {
+    display: flex;
+}
+
+.listb,
+.listc {
+    margin-left: 150px;
+}
+
+.footer_body {
+    margin-left: 5%;
+}
+
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.list-element {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.list-element a:hover {
+    color: #0065fc;
+}
 }
