@@ -31,6 +31,9 @@ fieldset{
 /* ********
 MOBILE 
 ********/
+/* ********
+HEADER
+******* */
 
 navbar a {
     display: block;
@@ -105,28 +108,9 @@ navbar a {
     background-color: #deebff;
     border-radius: 0 0 17px 17px;
 }
-/* commentaire 
-
-@media only screen and (min-width: 900px) {
-   .logo {
-     height: 200px;
-   }
-   .site-content {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 3.5% 60% 40px 30% 3.5%;
-        grid-template-areas: 
-        " header header header header header "
-        " search search search search search "
-        "  filter filter filter filter filter "
-        " . main . aside . "
-        ". activity activity activity ."
-        " footer footer footer footer footer"
-        ;
-} */
 
 /* ******** 
-SEARCH BAR 
+SEARCH 
 ******** */
 
 .btn-recherche {
@@ -183,7 +167,7 @@ SEARCH BAR
 }
    
 /* ******** 
-FILTER SECTION 
+FILTER 
 ******** */
 
 .filter-container {
@@ -211,6 +195,10 @@ FILTER SECTION
 .filter-item i {
     font-size: medium;
 }
+.filter-input {
+    background-color: #fff;
+    transition: all 0.5s;
+}
 
 .filter-input:hover {
     transform: scale(1.05);
@@ -236,7 +224,7 @@ FILTER SECTION
     color: #0065fc;
     margin: auto;
 }
-
+ 
 .filter-item-formulaire {
     display: flex;
     justify-content: flex-start;
@@ -247,7 +235,7 @@ FILTER SECTION
     border: solid 1px #deebff;
     border-radius: 20px;
     padding-left: 56px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .economique input {
@@ -305,6 +293,13 @@ FILTER SECTION
 .prix-aside {
     margin-top: 10px;
 }
+/* NOTES CARDS */
+
+.fas {
+    font-size: 0.7rem;
+    color: #f2f2f2;
+}
+
 /* HOVER CARDS */
 
 .cards-aside:hover,
@@ -346,7 +341,7 @@ aside {
 .aside_title i {
     color: black;
     font-size: 1.3rem;
-    margin-right: 20px;
+    padding-right: 20px;
     transition: color 0.5s;
 }
 
@@ -393,14 +388,78 @@ aside {
 MAIN HEBERGEMENT 
 ********/
 
+.hebergement_title {
+   font-size: 1.3rem;
+   padding-top: 20px;
+   margin: 20px 0 20px 5%;
+}
+
+/* CARDS HEBERGEMENT */
+.hebergeement-cards-content {
+    display: grid;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+
+.hebergement_cards {
+    background-color: white;
+    max-width: 345px;
+    border-radius: 17px;
+    box-shadow: 1px 1px 15px rdg(111, 111, 111);
+    transition: 0.3s;
+}
+
 .hebergement_body {
     margin-left: 15px;
 }
 
-.title-cards-aside,
-.hebergement_body_title,
-.body-activity {
-    font-size: 1rem;
+.hebergement_body_note {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.hebergement-thumb {
+    object-fit: cover;
+    height: 115px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 17px 17px 0px 0px;
+}
+
+.moore {
+    position: relative;
+    top: 30px;
+    font-weight: bolder;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    letter-spacing: 0.2px;
+    transition: color 0.5s;
+}
+
+/* ACTIVITY */
+
+#activity {
+    margin-top: 60px;
+    padding-bottom: 50px;
+}
+
+.cards-activity-content {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.activite_title {
+    font-size: 1.3rem;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+
+.activite_cards {
+    background-color: white;
+    max-width: 345px;
+    border-radius: 17px;
+    box-shadow: 1px 1px 15px darkgrey;
+    transition: 0.3s;
 }
 
 .body-activity {
@@ -409,33 +468,11 @@ MAIN HEBERGEMENT
     padding-bottom: 15px;
 }
 
-.prix-aside,
-.hebergement_body_price {
-    font-size: 0.8rem;
-    font-weight: 400;
-}
-
-.note-aside {
-    position: absolute;
-    top: 70px;
-}
-
-.aside-thumb {
+.activity-thumb {
     object-fit: cover;
-    height: 115px;
-    width: 128px;
-    padding: 5px;
+    height: 136px;
+    width: 100%;
     border-radius: 17px 17px 0px 0px;
 }
-.card-aside:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 40px -10px rgba( 0, 0, 0, 0.25);
-}
 
-.cards-aside:hover {
-    display: flex;
-}
-
-.note-aside {
-    display: flex;
-}
+/* FOOTER */
