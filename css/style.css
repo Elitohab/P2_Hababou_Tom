@@ -35,7 +35,7 @@ MOBILE
 HEADER
 ******* */
 
-navbar a {
+.navbar a {
     display: block;
     font-size: 1.2;
     font-weight: 500;
@@ -297,7 +297,7 @@ FILTER
 
 .fas {
     font-size: 0.7rem;
-    color: #f2f2f2;
+    color: #0065fc;
 }
 
 /* HOVER CARDS */
@@ -476,3 +476,159 @@ MAIN HEBERGEMENT
 }
 
 /* FOOTER */
+.footer_body {
+    max-width: 1853px;
+}
+
+footer{
+    background-color: #f2f2f2;
+    padding: 5%;
+}
+
+.list-element {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.list-element a {
+    transition: color 0.5s;
+    font-weight: 500;
+}
+
+/* FOR IPAD */
+
+@media only screen and (min-width: 720px) {
+    .cards-activity-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+    }
+
+.cards-aside-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.hebergement-cards-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px;
+}
+
+.footer_body {
+    align-content: flex-start;
+}
+}
+/* DESKTOP */
+
+@media only screen and (min-width: 992px) {
+    .site-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 60% 30px 33% 1fr;
+        grid-template-areas: 
+             " header header header header header "
+             " search search search search search "
+             " filter filter filter filter filter "
+             " . main . aside . "
+             " .activity activity activity .";
+
+    }
+
+    .logo {
+        margin-top: 32px;
+        height: 70px;
+        margin-left: 3.5%;
+    }
+
+    /* HEADER */
+
+    header {
+        grid-area: header;
+    }
+
+    .titre_container {
+        margin: -30px 0 0 3.5%;
+    }
+
+    .navbar {
+        flex-wrap: nowrap;
+        top: -124px;
+    }
+
+    .hebergement-link {
+        width: 150px;
+        border-bottom: none;
+        border-top: solid 3px #0065fc;
+        padding-top: 40px;
+    }
+
+    .activity-link {
+        width: auto;
+        border-bottom: none;
+        padding-top: 40px;
+        width: 150px;
+    }
+
+    .suscrib-link {
+        position: initial;
+        padding-top: 40px;
+        text-align: center;
+        display: block;
+        width: 150px;
+    }
+
+    .activity-link:hover {
+        border-bottom: none;
+        border-top: solid 3px #0065fc;
+        color: #0065fc;
+    }
+
+    /* SEARCH NAVBAR */
+
+    .search {
+        grid-area: search;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn-recherche {
+        margin-left: 3.5%;
+    }
+
+    .btn-recherche_input_submit {
+        visibility: visible;
+        position: absolute;
+        height: 50px;
+        border: none;
+        border-radius: 0px 16px 16px 0px;
+        background-color: #0065fc;
+        color: #f2f2f2;
+        font-weight: bold;
+        padding: 15px;
+    }
+
+    .btn-recherche_loupe {
+        visibility: hidden;
+    }
+
+    /* FILTER */
+
+    .filter {
+        grid-area: filter;
+    }
+
+    .filter-title {
+        width: unset;
+        margin: 0;
+        padding-top: 50px;
+        margin-right: 40px;
+    }
+
+    .info-container {
+        margin-left: 3.5%;
+    }
+    
