@@ -75,7 +75,7 @@ HEADER
 }
 
 .suscrib-link {
-    font-weight: 700;
+    font-weight: 900;
     position: relative;
     bottom: 56px;
     margin-right: 5%;
@@ -91,10 +91,12 @@ HEADER
      font-size: 1.3em;
      line-height: 1.3em;
      margin-bottom: 10px;
+     margin-top: 0px;
 }
 .titre_secondaire {
     font-size: 500;
     font-size: 1rem;
+    font-weight: lighter;
 }
 
 .activity-link:hover {
@@ -104,9 +106,9 @@ HEADER
 
 .suscrib-link:hover {
     color:#0065fc;
-    font-weight: bolder;
     background-color: #deebff;
     border-radius: 0 0 17px 17px;
+    font-weight: bolder;
 }
 
 /* ******** 
@@ -116,7 +118,7 @@ SEARCH
 .btn-recherche {
     margin-left: 4.5%;
     margin-right: 5%;
-    margin-top: 35px;
+    margin-top: 20px;
     display: flex;
     grid-area: btn;
 }
@@ -180,7 +182,7 @@ FILTER
 .filter-title {
     width: 100%;
     font-size: 1rem;
-    margin-left: 5px;
+    margin-left: 25px;
     margin-top: 30px;
 }
 
@@ -213,18 +215,20 @@ FILTER
     width: 52px;
     border-radius: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     left: -9px;
     top: -1px;
     z-index: 1;
+  
 }
 
 .filter-icone i
 .icone-info i {
     color: #0065fc;
-    margin: auto;
 }
- 
+
 .filter-item-formulaire {
     display: flex;
     justify-content: flex-start;
@@ -268,6 +272,8 @@ FILTER
 
 .icone-info {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 25px;
     width: 25px;
     border:  solid 1px #deebff;
@@ -284,13 +290,13 @@ FILTER
 
 /* PRICE OF CARDS */
 
-.prix-aside
+.price-aside
 .hebergement_body_price {
     font-size: 0.8rem;
     font-weight: 400;
 }
 
-.prix-aside {
+.price-aside {
     margin-top: 10px;
 }
 /* NOTES CARDS */
@@ -298,6 +304,9 @@ FILTER
 .fas {
     font-size: 0.7rem;
     color: #0065fc;
+}
+.grey {
+    color: #deebff;
 }
 
 /* HOVER CARDS */
@@ -310,8 +319,8 @@ FILTER
 }
 
 /* HOVER LIENS ET COULEUR NOTES */
-.blue-star i
-.aside_title i:hover
+.blue-star i,
+.aside_title i:hover,
 .moore:hover,
 .list-element a:hover {
     color: #0065fc;
@@ -347,11 +356,11 @@ aside {
 
 .cards-aside-content {
     display: grid;
-    grid-row-gap: 10px;
+    grid-row-gap: 20px;
     justify-items: center;
 }
 
-.card-aside { 
+.cards-aside { 
     display: flex;
     justify-content: center;
     background-color: white;
@@ -372,11 +381,11 @@ aside {
     top: 103px;
 }
 
-.aside-right {
+.aside-thumb {
     object-fit: cover;
     height: 150px;
     width: 150px;
-    padding: 5%;
+    padding: 1%;
     border-radius: 17px 0px 0px 17px;
 }
 
@@ -395,7 +404,7 @@ MAIN HEBERGEMENT
 }
 
 /* CARDS HEBERGEMENT */
-.hebergeement-cards-content {
+.hebergement-cards-content {
     display: grid;
     grid-row-gap: 10px;
     justify-items: center;
@@ -446,6 +455,7 @@ MAIN HEBERGEMENT
 .cards-activity-content {
     display: grid;
     grid-row-gap: 10px;
+    justify-items: center;
 }
 
 .activite_title {
@@ -560,25 +570,26 @@ footer{
     }
 
     .hebergement-link {
-        width: 150px;
+        width: auto;
         border-bottom: none;
-        border-top: solid 3px #0065fc;
-        padding-top: 40px;
+        border-top: solid 20px #0065fc;
+        padding-top: 50px;
     }
 
     .activity-link {
         width: auto;
         border-bottom: none;
-        padding-top: 40px;
+        padding-top: 70px;
         width: 150px;
     }
 
     .suscrib-link {
         position: initial;
-        padding-top: 40px;
+        padding-top: 70px;
         text-align: center;
         display: block;
-        width: 150px;
+        width: auto;
+        color: #0065fc;
     }
 
     .activity-link:hover {
@@ -631,4 +642,143 @@ footer{
     .info-container {
         margin-left: 3.5%;
     }
+
+
+    /* HEBERGEMENT */
+
+    main {
+        background-color: #f2f2f2;
+        height: auto;
+        border-radius: 17px;
+        grid-area: main;
+        width: 100%;
+    }
+
+    .hebergement_title {
+        margin-left: 1.2%;
+    }
+
+    .hebergement-cards-content {
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: center;
+    }
+
+    .hebergement_cards {
+        max-width: 245px;
+        margin: 10px;
+    }
+
+    .moore {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-left: 1.5%;
+    }
+
+    /* ASIDE */
+
+    aside {
+        border-radius: 17px;
+        grid-area: aside;
+        padding-bottom: 30px;
+    }
+
+    .aside-title {
+        margin-left: 3.5%;
+    }
+
+    .cards-aside-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+    }
+
+    /* ACTIVITE */
+
+    #activity {
+        grid-area: activity;
+    }
+
+    .activite_title {
+        margin-left: 1%;
+    }
+
+    .cards-activity-content {
+        grid-template-columns: 1fr repeat(4, 1fr);
+        grid-template-rows: 195px 45px 45px 170px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: center;
+    }
+
+    .activite_cards {
+        margin: 0;
+    }
+        .port img,
+        .calanques img {
+            height: 532px;
+        }
+
+        .parc img {
+            height: 251px;
+        }
+
+        .fort img {
+            height: 201px;
+        }
+
+        .port {
+            grid-area: 1/1/6/3;
+        }
+
+        .fort {
+            grid-area: 1/3/3/5;
+        }
+
+        .frioul {
+            grid-area: 3/3/6/5;
+        }
+
+        .frioul img {
+            height: 250px;
+        } 
+
+        .calanques {
+            grid-area: 1/5/6/8;
+        }
+
+        .dame img {
+            height: 201px;
+        }
+
+        .parc {
+            grid-area: 3/8/6/8;
+        }
     
+
+/* FOOTER */
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    margin-top: 50px;
+    padding: 45px 0 50px 0;
+}
+
+.footer_body {
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+    padding-left: 3%;
+}
+.listb {
+    margin: 0 20%;
+}
+.listc {
+    margin: 0 25%;
+}
+
+}
