@@ -534,6 +534,7 @@ footer{
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
+
 }
 
 .hebergement-cards-content {
@@ -542,8 +543,18 @@ footer{
     grid-row-gap: 10px;
 }
 
+footer {
+    grid-area: footer;
+    width: 100%;
+    margin-top: auto;
+    padding-right: 10rem;
+}
+
 .footer_body {
-    align-content: flex-start;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: auto;
 }
 }
 /* DESKTOP */
@@ -558,7 +569,7 @@ footer{
              " search search search search search "
              " filter filter filter filter filter "
              " . main . aside . "
-             " .activity activity activity .";
+             " . activity activity activity .";
 
     }
 
@@ -599,7 +610,7 @@ footer{
 
     .suscrib-link {
         position: initial;
-        padding-top: 70px;
+        padding-top: 60px;
         text-align: center;
         display: block;
         width: auto;
@@ -644,13 +655,6 @@ footer{
 
     .filter {
         grid-area: filter;
-    }
-
-    .filter-title {
-        width: unset;
-        margin: 0;
-        padding-top: 50px;
-        margin-right: 40px;
     }
 
     .info-container {
@@ -778,21 +782,21 @@ footer{
 footer {
     grid-area: footer;
     width: 100%;
-    margin-top: 50px;
-    padding: 45px 0 50px 0;
+    margin-top: auto;
+    padding: 15px 0 15px 0;
 }
 
 .footer_body {
     display: flex;
     justify-content: flex-start;
     margin: auto;
-    padding-left: 3%;
+    padding-left: 5%;
 }
 .listb {
-    margin: 0 20%;
+    margin: 0 15%;
 }
 .listc {
-    margin: 0 25%;
+    margin: 0 4%;
 }
 
 }
