@@ -182,7 +182,6 @@ FILTER
 }
 
 .filter-title {
-    width: 100%;
     font-size: 1rem;
     margin-left: 25px;
     margin-top: 30px;
@@ -365,7 +364,7 @@ aside {
 
 .cards-aside-content {
     display: grid;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
     justify-items: center;
 }
 
@@ -507,6 +506,7 @@ MAIN HEBERGEMENT
 
 footer{
     background-color: #f2f2f2;
+    padding-left: 25px;
 }
 
 .list-element {
@@ -522,12 +522,17 @@ footer{
 
 /* FOR IPAD */
 
+
 @media only screen and (min-width: 720px) {
     .cards-activity-content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 10px;
     }
+
+.filter {
+    margin-left: 1.5%;
+}
 
 .cards-aside-content {
     display: grid;
@@ -541,6 +546,15 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
+}
+
+.aside_title,
+.moore,
+.hebergement_title,
+.activite_title {
+    margin-left: 4%;
+    margin-bottom: 5%;
+   
 }
 
 footer {
@@ -653,8 +667,10 @@ footer {
 
     /* FILTER */
 
+    .filter-container,
     .filter {
-        grid-area: filter;
+        display: flex;
+        margin-left: 2%;
     }
 
     .info-container {
@@ -768,6 +784,9 @@ footer {
             grid-area: 1/5/6/8;
         }
 
+        .dame {
+            grid-area: 1/8/3/8;
+        }
         .dame img {
             height: 201px;
         }
