@@ -18,14 +18,14 @@
                            <!------ HEADER ------>
    <header class="header">
             
-     <img class="logo" src="images/logo/Reservia.svg" alt="le logo de Reservia"></a>
+     <img class="headerlogo" src="images/logo/Reservia.svg" alt="le logo de Reservia"></a>
                         
-      <nav class="navbar">
-        <a class="Navlink" href="#hebergement" data-active="true">Hébergements</a>
-        <a class="Navlink" href="#activity" data-active="false">Activités</a>
+      <nav class="headerbar">
+        <a class="navlink" href="#hebergement" data-active="true">Hébergements</a>
+        <a class="navlink" href="#activity" data-active="false">Activités</a>
                            
       </nav>
-         <a class="suscrib-link" href="#">S'inscrire</a></li> 
+         <a class="suscrib-link" href="#">S'inscrire</a>
     </header>         
                            <!----- HEADER ------>
 
@@ -48,13 +48,13 @@
 
            <input class="btn-recherche_input" type="search" placeholder="Marseille, France" autofocus>
             <button class="btn-recherche_input_submit">
-           <span class="btniconetext">"Rechercher"</span>
+           <span class="btniconetext">Rechercher</span>
              <i class="btnformicone fas fa-search"></i>
   
              </button>
          </form>
                            <!---- FILTER SECTION ---->
-       <div class="filter" id="filter">
+       <div class="filter">
          <h2 class="filter-title">Filtres</h2>
          
                            <!---- Filtre economique --->
@@ -98,7 +98,6 @@
               <!--SEARCH-->
 
                         <!---- MAIN HEBERGEMENT ---->
-
 
       <section id="hebergement" id="hebergement">
          <div class="hebergement-cards-content">
@@ -400,32 +399,28 @@
 
                                 <!--- FOOTER --->
 
-      <footer>
+      <footer class="footer">
 
           <div class="footer_body">
-
-           <br><ul class="lista">
-               <h4 class="list-element"><strong>A propos</strong></h4>
-               <li class="list-element"><a href="#">Fonctionnement du site</a></li>
-               <li class="list-element"><a href="#">Conditions générale de ventes</a></li>
-               <li class="list-element"><a href="#">Données et confidentialité</a></li>
-           </ul>
-          </br>
-
-           <br><ul class="listb">
-                <h3 class="list-element"><strong>Nos hébergements</strong></h3>
-                <li class="list-element"><a href="#">Charte qualité</a></li>
-                <li class="list-element"><a href="#">Soumettre votre hôtel</a></li>
-           </ul>
-         </br>
+            <div class="footerbodycolumn">
+               <h3 class="list-elementtitle">A propos</h3>
+               <a class="list-element"><a href="#">Fonctionnement du site</a>
+               <a class="list-element"><a href="#">Conditions générale de ventes</a>
+               <a class="list-element"><a href="#">Données et confidentialité</a>
+            </div>
+          
+            <div class="footerbodycolumn">
+                <h3 class="list-elementtitle">Nos hébergements</h3>
+                <a class="list-element"><a href="#">Charte qualité</a>
+                <a class="list-element"><a href="#">Soumettre votre hôtel</a>
+            </div>
             
-             <br><ul class="listc">
-               <h3 class="list-element"><strong>Assistance</strong></h3>
-               <li class="list-element"><a href="#">Centre d'aide</a></li>
-               <li class="list-element"><a href="#">Nous contacter</a></li>
-           </ul>
+            <div class="footerbodycolumn">
+               <h3 class="list-elementtitle">Assistance</h3>
+               <a class="list-element"><a href="#">Centre d'aide</a>
+               <a class="list-element"><a href="#">Nous contacter</a>
          </div>
-      </br>
+        </div>
           </footer>
     </body>
  </html>
