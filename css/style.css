@@ -17,7 +17,7 @@ a {
 .headerlogo {
     grid-area: logo;
     padding: 0 2rem;
-    height: 2.8rem;
+    height: 3.5rem;
     margin-top: 3%;
 }
 .headerbar {
@@ -108,6 +108,7 @@ a {
     display: inline-flex;
     max-width: 100%;
     overflow: auto;
+    margin-top: 1.5rem;
 }
 
 .pin-icone {
@@ -119,6 +120,7 @@ a {
 
 .pin-iconeform {
     margin-left: 0.1rem;
+    font-size: 22px;
 }
 
 .btn-recherche_input {
@@ -126,9 +128,8 @@ a {
     border-left: none;
     border-top: #F2F2F2 1px solid;
     border-bottom: #F2F2F2 1px solid;
-    padding: 0 1.5rem;
+    padding: 0 1.7rem 0 1.5rem;
     box-sizing: border-box;
-    width: 14rem;
     font-size: 1rem;
     font-weight: bold;
     font-family: "Raleway", "Sans serif";
@@ -136,10 +137,10 @@ a {
 
 .btn-recherche_input::placeholder {
     font-family: "Raleway", "Sans serif";
-    font-size: 1rem;
-    color: #00000069;
+    font-size: 1.2rem;
+    color: rgb(83, 82, 82);
+    font-weight: bold;
 }
-
 .btn-recherche_inputsubmit {
     color: white;
     background-color: #0065fc;
@@ -151,16 +152,17 @@ a {
     font-size: 1rem;
     cursor: pointer;
 }
-
 .filter {
     display: flex;
     margin-top: 2rem;
+    align-items:flex-start;
     flex-wrap: wrap;
 }
 .filter-title {
     margin: 0 2rem 1rem 0;
     display: flex;
     align-items: center;
+    font-size: 1.3rem;
 }
 .filter-container {
     display: flex;
@@ -198,13 +200,16 @@ a {
 .filter-item-title {
     margin: 0 1rem;
 }
+.filter-item i {
+    font-size: 1.2rem;
+}
 .info-container {
     display: flex;
     align-items: center;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 4rem 0;
 }
 .icone-info {
-    height: 2rem;
+    height: 1rem;
     width: 2rem;
     min-height: 2rem;
     min-width: 2rem;
@@ -215,11 +220,10 @@ a {
     justify-content: center;
     margin-right: 1rem;
 }
-
 .icone-infoicon {
     color: #0065fc;
+    font-size: 0.9rem;
 }
-
 .infotext {
     margin: 0;
 }
@@ -229,23 +233,17 @@ a {
         display: flex;
         width: 100%;
     }
-
     .btn-recherche_input {
         flex: 1;
     }
-
     .btniconetext {
         display: none;
     }
-
-    .btnformicone {
-        display: block;
+    .btn-recherche_inputsubmit, .btnformicone{
+        border-radius: 1rem;
+        font-size: 19px;
     }
-    .hebergement {
-        background-color: #F2F2F2;
-        visibility: hidden;
     }
-}
 
 @media screen and (max-width: 650px) {
     .filter-title {
@@ -255,25 +253,10 @@ a {
         margin-right: 1rem;
     }
 }
-
-@media screen and (max-width: 601px) {
-    .btniconetext {
-        display: block;
-    }
-    .btnformicone {
-        display: none !important;
-    }
-}
 .hebergement-cards-content, .hebergementpopulaire {
     background-color: #F2F2F2;
     border-radius: 1.5rem;
     padding: 2rem;
-}
-.hebergement-cards-content {
-    background-color: #F2F2F2;
-    margin-top: 1rem;
-    padding: 2rem;
-    
 }
 .hebergement {
     display: grid;
@@ -295,7 +278,7 @@ a {
     background-color: white;
     padding: 0.375rem;
     border-radius: 1.25rem;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 0 0 16px #0f0f0f2e;
     transition-duration: 0.1s;
     cursor: pointer;
     box-sizing: border-box;
@@ -335,7 +318,7 @@ a {
 }
 .moore {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
 }
 .hebergementpopulaire {
     display: grid;
@@ -385,11 +368,15 @@ a {
         grid-template-columns: 1fr;
         row-gap: 2rem;
     }
+    .hebergement-cards-content {
+        direction: ltr;
+    }
     .hebergementpopulaire {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto 10rem;
         column-gap: 2rem;
         grid-row-start: 1;
+        direction:ltr;
     }
     .hebergementpopulairetitle {
         grid-column: 1/-1;
@@ -399,36 +386,49 @@ a {
 @media (min-width: 925px) {
     .hebergement-cards-content {
         grid-template-columns: repeat(3, 1fr);
+        margin-top: 2rem;
     }
 }
 @media (max-width: 925px) and (min-width: 650px) {
     .hebergement-cards-content {
         grid-template-columns: 1fr 1fr;
+        margin-top: 2rem;}
+    .hebergementpopulaire {
+       margin-top: -2rem;
     }
 }
 @media (max-width: 650px) {
+     .hebergementpopulaire {
+        margin: -2rem;
+    } 
     .hebergement-cards-content {
         grid-template-columns: 1fr;
+        background-color: white;
+        margin: -2rem;
+        margin-top: 2rem;
     }
-}
+    }
 @media (max-width: 1000px) {
     .hebergementpopulaire {
         grid-template-columns: 1fr;
         grid-template-rows: auto repeat(3, 9rem);
     }
 }
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1100px) {
     .section-hebergement-populaire {
         display: grid;
         column-gap: 2rem;
         grid-template-columns: 3fr 6fr;
         flex: 1;
         direction:rtl;
+        margin-top: -3rem;
     }
-
     .hebergementpopulaire {
        display: grid;
        grid-template-columns: 1fr;
+    }
+    .hebergement-cards-content {
+        margin-top: 0rem;
     }
 }
 .activity {
@@ -517,8 +517,7 @@ a {
 }
 .footer {
     background-color: #F2F2F2;
-    width: 120%;
-    margin-left: -2rem;
+    width: 100%;
 }
 .footer_body {
     display: flex;
@@ -526,7 +525,6 @@ a {
     width: 1440px;
     margin: auto;
     padding: 0 2rem;
-    box-sizing: border-box;
 }
 .footerbodycolumn {
     width: 30%;
@@ -539,8 +537,10 @@ a {
 .list-element:hover {
     text-decoration: underline;
 }
-
-@media (max-width: 750px) {
+@media (max-width: 850px) {
+    .footer {
+        width: 100%;
+    }
     .footer_body {
         flex-direction: column;
         padding: 2rem;
@@ -549,11 +549,5 @@ a {
         width: 100%;
         padding: 0;
         margin: 1rem 0;
-    }
-    .footerbodycolumn:first-child {
-        margin-top: 0;
-    }
-    .footerbodycolumn:first-child {
-        margin-bottom: 0;
     }
 }
